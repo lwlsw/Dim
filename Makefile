@@ -9,7 +9,7 @@ Dim_FILES = $(wildcard tweak/*.m tweak/*.mm tweak/*.x tweak/*.xm)
 Dim_FRAMEWORKS = UIKit
 
 include $(THEOS_MAKE_PATH)/tweak.mk
-SUBPROJECTS += switch
+SUBPROJECTS += ccmodule
 SUBPROJECTS += preferences
 include $(THEOS_MAKE_PATH)/aggregate.mk
 
