@@ -1,6 +1,6 @@
 Package: com.thomasfinch.dim
 Name: Dim (udevs)
-Depends: mobilesubstrate, preferenceloader, com.opa334.ccsupport
+Depends: mobilesubstrate, preferenceloader, com.opa334.ccsupport, firmware(>=11.0)
 Version: 1.5.3
 Architecture: iphoneos-arm
 Description: Dim your screen even further!
