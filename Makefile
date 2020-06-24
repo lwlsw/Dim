@@ -1,5 +1,7 @@
+DEBUG=0
+FINALPACKAGE=1
+
 ARCHS = arm64 arm64e
-TARGET_IPHONEOS_DEPLOYMENT_VERSION = 7.0
 THEOS_PACKAGE_DIR_NAME = debs
 
 include $(THEOS)/makefiles/common.mk
@@ -7,6 +9,7 @@ include $(THEOS)/makefiles/common.mk
 TWEAK_NAME = Dim
 Dim_FILES = $(wildcard tweak/*.m tweak/*.mm tweak/*.x tweak/*.xm)
 Dim_FRAMEWORKS = UIKit
+Dim_CFLAGS = -fobjc-arc
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 SUBPROJECTS += ccmodule

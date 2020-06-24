@@ -1,5 +1,4 @@
-ARCHS = armv7 arm64
-TARGET_IPHONEOS_DEPLOYMENT_VERSION = 7.0
+ARCHS = arm64 arm64e
 
 include $(THEOS)/makefiles/common.mk
 
@@ -8,6 +7,7 @@ Dim_FILES = Dim.mm
 Dim_INSTALL_PATH = /Library/PreferenceBundles
 Dim_FRAMEWORKS = UIKit
 Dim_PRIVATE_FRAMEWORKS = Preferences
+Dim_CFLAGS = -fobjc-arc
 
 include $(THEOS_MAKE_PATH)/bundle.mk
 
