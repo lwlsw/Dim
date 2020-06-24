@@ -28,7 +28,7 @@
 }
 
 - (id)specifiers {
-	if(!_specifiers) {
+	if(_specifiers == nil) {
 		_specifiers = [self loadSpecifiersFromPlistName:@"Dim" target:self];
 	}
 	return _specifiers;
